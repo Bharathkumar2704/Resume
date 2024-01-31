@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+        .bg {
+          animation: slide 3s ease-in-out infinite alternate;
+          background-image: linear-gradient(-60deg, #9900ff 30%, black 50%);
+          bottom: 0;
+          left: -50%;
+          opacity: 0.2;
+          position: fixed;
+          right: -50%;
+          top: 0;
+          z-index: -1;
+        }
+    
+        .bg2 {
+          animation-direction: alternate-reverse;
+          animation-duration: 4s;
+        }
+    
+        .bg3 {
+          animation-duration: 5s;
+        }
+    
+        
+        @keyframes slide {
+          0% {
+            transform: translateX(-25%);
+          }
+          100% {
+            transform: translateX(25%);
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <nav>
+        <a href="./index.html"><img src= "images/logo.gif"></a>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./exp.html">Experience</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="./cert.html">Certification</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div id="exp">
+        <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('experience')" style="font-size: 32px;">Experience</p>
+            <p class="tab-links" onclick="opentab('education')" style="font-size: 32px;">Education</p>
+        </div>
+        <div class="tab-contents  active-tab" id="experience">
+            <ul>
+                <li>
+                    <h2><span>Data Engineer</span></h2>
+                    <p><em>Techy Geeks IT</em></p>
+                    <ul>
+                        <li>Build a data pipeline using AWS Kinesis, AWS Glue, and PySpark specializing in transforming raw machine data into actionable insights for predictive maintenance.</li>
+                        <li>Implemented algorithms Random Forest and Gradient Boosting to develop predictive models, achieving a 70% improvement in early detection of potential equipment failures and minimizing downtime.</li>
+                        <li>Integrated MLOps practices, leveraging AWS SageMaker and MLflow, to streamline model training, deployment, and monitoring.</li>
+                        <li>Leverage AWS Glue for ETL processes, extracting financial data and utilizing Python scripts for transformation before loading into Snowflake.</li>
+                        <li>Utilized financial statistical models, including Monte Carlo simulations and Black-Scholes pricing, within AWS SageMaker for precise portfolio analysis, optimization, and future outcome predictions.</li>
+                        <li>Orchestrate the workflow with Apache Airflow, ensuring seamless execution, and deploy results using AWS CloudFormation, showcasing insights in Power BI for intuitive visualization.</li>
+                        <li>Implement continuous deployment practices, monitoring with CloudWatch, ensuring a dynamic and responsive data engineering and machine learning pipeline.</li>
+                    </ul>
+
+                    <h2><span>Data Analyst (R&D)</span></h2>
+                    <p><em>Integra Software Services Private Limited</em></p>
+                    <ul>
+                        <li>Routed IoT sensor data seamlessly from Azure IoT Hub to Azure Data Factory and further processed it in Azure Databricks, or enhanced ETL within the Azure ecosystem.</li>
+                        <li>Applied time series analysis techniques (STL) to uncover seasonal patterns in energy usage, leading to a 90% improvement in identifying peak consumption periods.</li>
+                        <li>Implemented anomaly detection using models like Isolation Forests and One-Class SVM, resulting in an 85% increase in accuracy for detecting irregular energy consumption.</li>
+                        <li>Employed K-Means clustering for consumer segmentation based on energy consumption profiles, using features engineered from the cleaned data.</li>
+                        <li>Collaborated closely with the client's sales teams to strategically modernize data infrastructure, migrating historical data to Azure.</li>
+                        <li>Implemented Azure Machine Learning for predictive analytics for data-driven sales foresight. Utilized Azure Synapse Analytics for efficient data processing and advanced analytics.</li>
+                        <li>Employed an agile DevOps methodology with Azure DevOps and Azure Kubernetes Service, ensuring seamless deployment and continuous improvement based on iterative analysis of historical data.</li>
+                    </ul>
+
+                    <h2><span>Python Web Developer (Intern)</span></h2>
+                    <p><em>HashInclude Computech Private Limited</em></p>
+                    <ul>
+                        <li>Architected dynamic web applications using Python, Django, HTML, CSS, and JS, to enhance user interaction and experience.</li>
+                        <li>Spearheaded Azure cloud deployments, employing Docker for containerization and Terraform for Infrastructure as Code. Instituted Git-based version control workflows, implemented CI/CD pipelines using GitHub Actions, seamlessly integrating REST APIs and PostgreSQL to establish a robust and scalable backend architecture.</li>
+                        <li>Engineered chatbot systems featuring web scraping functionality using Selenium, BeautifulSoup, and XPath to extract data from diverse online sources.</li>
+                        <li>Implemented regular expressions (regex) for data cleaning, resulting in a 45% enhancement in the quality of the extracted information. Additionally, integrated natural language understanding (NLP), leading to an 80% improvement in logical comprehension of user queries and contextually appropriate responses.</li>
+                        <li>Engineered a sophisticated database system with proactive stock shortage detection algorithms to optimize inventory management and ensure uninterrupted product availability.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+
+                <li><span><h3>Global Certificate in Data Science & AI - INSAID (Diploma)</h3></span></li>
+                <p><strong>Modules Learned:</strong> Python, Data Analysis, Tableau, ML, OpenCV, NLP, Tensorflow and DeepLearning</p>
+                <p><strong>Projects:</strong> Sales Forecasting, genetic variant classification, Analysis of HMDA data</p>
+
+                <li> <span><h3>Masters in Big Data and High-performance Computing</h3></span></li>
+                <p><strong>University:</strong> University of Liverpool</p>
+                <p><strong>Modules Learned:</strong> Big data analytic, Optimization, Data mining and visualization, Machine learning</p>
+                <p><strong>Projects:</strong> Developed CNN model for bio-energy source identification and comparing ML techniques.</p>
+
+                <li><span><h3>Bachelors in Computer Science</h3></span></li>
+                <p><strong>University:</strong> S.R.M University</p>
+                <p><strong>Modules Learned:</strong> Oops, Database management, Cloud computing, Web development</p>
+                <p><strong>Project:</strong> Developed a real-time intelligent camera monitoring system leveraging CNNs within the OpenCV Python framework.</p>
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    
+    
+</body>
+</html>
